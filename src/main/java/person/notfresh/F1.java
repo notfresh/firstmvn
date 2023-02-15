@@ -2,7 +2,7 @@ package person.notfresh;
 
 public class F1 {
     public void say(){
-        System.out.println("Hello, notfresh");
+        System.out.println("Hello, notfresh， I am new");
     }
 
     public static void main(String[] args) {

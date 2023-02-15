@@ -10,19 +10,24 @@
 
 <!--    版权声明：本文为CSDN博主「EJoft」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。-->
 <!--    原文链接：https://blog.csdn.net/EJoft/article/details/109403095-->
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>1.8</java.version>
-    </properties>
+<!--    <properties>-->
+<!--        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
+<!--        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>-->
+<!--        <java.version>1.8</java.version>-->
+<!--    </properties>-->
 
 
     <distributionManagement>
-        <repository>
-            <id>local-repo-release</id>
-            <name>github-release</name>
-            <url>file://${project.basedir}/maven-repo</url>
+<!--        <repository>-->
+<!--            <id>local-repo-release</id>-->
+<!--            <name>github-release</name>-->
+<!--            <url>file://${project.basedir}/maven-repo</url>-->
 
+<!--        </repository>-->
+        <repository>
+            <id>zxrepo</id>
+            <name>zx repo with nexus</name>
+            <url>http://localhost:8081/repository/zxrepo/</url>
         </repository>
 
     </distributionManagement>
