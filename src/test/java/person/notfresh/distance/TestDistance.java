@@ -1,5 +1,6 @@
 package person.notfresh.distance;
 
+import org.junit.Assert;
 import org.junit.Test;
 import person.notfresh.Distance;
 import person.notfresh.Pair;
@@ -15,6 +16,7 @@ public class TestDistance {
         double ret = d.dis(p1.second, p1.first, p2.second
                 , p2.first);
         System.out.println(ret);
+        Assert.assertTrue(Math.abs(ret - 6445) < 1);
         // 440081.072156389
     }
 
