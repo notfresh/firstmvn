@@ -1,11 +1,11 @@
 name: notfresh maven test
 run-name: ${{ github.actor }} runs test codes🚀
 
-on:
-  push:
-    branches: [ $default-branch ]
-  pull_request:
-    branches: [ $default-branch ]
+on: [push]
+#  push:
+#    branches: [ $default-branch ]
+#  pull_request:
+#    branches: [ $default-branch ]
 
 jobs:
   maven-test:
