@@ -12,6 +12,7 @@ test-job1:
 #      - merge_requests
 
 test-job2:
+  image: maven:3.8.5-jdk-11
   stage: test
 #  only:
 #    - merge_requests
