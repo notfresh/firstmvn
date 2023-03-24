@@ -14,21 +14,22 @@ test-job1:
 #      - merge_requests
 
 test-job2:
-  image: maven:3.8.5-jdk-11
   stage: test
+  # image: maven:3.8.5-jdk-11
 #  only:
 #    - merge_requests
   script:
     - echo "This job tests something, but takes more time than test-job1."
     - echo "After the echo commands complete, it runs the sleep command for 20 seconds"
     - echo "which simulates a test that runs 20 seconds longer than test-job1"
-    # - mvn test
+    - mvn test
     - sleep 4
   tags:
-    - docker
-    - jdk17
-    - "3.8.5"
-    - mvn
+    - shell-runner1
+#    - docker
+#    - jdk17
+#    - "3.8.5"
+#    - mvn
 
 #deploy-prod:
 #  stage: deploy
