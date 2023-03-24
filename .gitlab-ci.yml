@@ -8,7 +8,7 @@ test-job1:
   script:
     - echo "This job tests something"
     - sleep 20
-  tag:
+  tags:
     - shell-runner1
 #  only:
 #      - merge_requests
