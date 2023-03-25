@@ -15,7 +15,7 @@ test-job1:
 
 test-job2:
   stage: test
-  # image: maven:3.8.5-jdk-11
+  image: maven:3.8.5-jdk-11
 #  only:
 #    - merge_requests
   script:
@@ -25,11 +25,11 @@ test-job2:
     - mvn test
     - sleep 4
   tags:
-    - shell-runner1
-#    - docker
-#    - jdk17
-#    - "3.8.5"
-#    - mvn
+    # - shell-runner1
+    - docker
+    - jdk17
+    - "3.8.5"
+    - mvn
 
 #deploy-prod:
 #  stage: deploy
